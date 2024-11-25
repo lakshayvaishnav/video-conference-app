@@ -21,6 +21,10 @@ body {
     text-wrap: balance;
   }
 }
+.cl-providerIcon__github{
+  filter: invert(1);
+}
+
 
 @layer base {
   :root {
