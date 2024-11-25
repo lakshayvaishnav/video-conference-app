@@ -15,7 +15,7 @@ const config: Config = {
 				2:'#161925'
 			},
 			blue:{
-				1:'#'
+				1:'#0E78F9'
 			},
 
   			background: 'hsl(var(--background))',
