@@ -14,7 +14,7 @@ const MobileNav = () => {
   return (
     <section className="w-full max-w-[264px]">
       <Sheet>
-        <SheetTrigger asChild>
+        <SheetTrigger asChild  >
           <Image
             src="/icons/hamburger.svg"
             width={36}
