@@ -1,6 +1,5 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
 
-import Image from "next/image";
 
 const Home = () => {
   const now = new Date();
