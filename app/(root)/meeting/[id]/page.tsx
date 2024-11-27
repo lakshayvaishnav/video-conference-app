@@ -49,7 +49,7 @@ const MeetingPage = () => {
           ) : (
             <>
             <h1>meetin room beign rendered</h1>
-            {/* <MeetingRoom /> */}
+            <MeetingRoom />
             </>
           )}
         </StreamTheme>
