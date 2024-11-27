@@ -106,7 +106,7 @@ const MeetingTypeList = () => {
         className="bg-yellow-1"
         handleClick={() => router.push("/recordings")}
       />
-
+  
       {!callDetail ? (
         <MeetingModal
           isOpen={meetingState === "isScheduleMeeting"}
