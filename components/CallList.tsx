@@ -46,6 +46,8 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
         callRecordings?.map((meeting) => meeting.queryRecordings()) ?? [],
       );
 
+
+      // flatmap flattens the 2d 3d array to 1d array...
       const recordings = callData
         .filter((call) => call.recordings.length > 0)
         .flatMap((call) => call.recordings);
