@@ -42,20 +42,14 @@ const MeetingPage = () => {
       <StreamCall call={call}>
         <StreamTheme>
           {!isSetupComplete ? (
-            <>
-            <h1>meetin setup being rendered</h1>
             <MeetingSetup setIsSetupComplete={setIsSetupComplete} />
-            </>
           ) : (
-            <>
-            <h1>meetin room beign rendered</h1>
             <MeetingRoom />
-            </>
           )}
         </StreamTheme>
       </StreamCall>
     </main>
   );
 };
-
+ 
 export default MeetingPage;
