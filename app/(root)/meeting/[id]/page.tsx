@@ -7,14 +7,17 @@ import { useParams } from "next/navigation";
 import { Loader } from "lucide-react";
 
 import { useGetCallById } from "@/hooks/useGetCallById";
-import Alert from "@/components/Alert";
+// import Alert from "@/components/Alert";
 import MeetingSetup from "@/components/MeetingSetup";
 import MeetingRoom from "@/components/MeetingRoom";
+import Alert from "@/components/Alert";
 
 const MeetingPage = () => {
   const { id } = useParams();
   const { isLoaded, user } = useUser();
+
   const { call, isCallLoading } = useGetCallById(id);
+
   const [isSetupComplete, setIsSetupComplete] = useState(false);
 
   if (!isLoaded || isCallLoading) return <Loader />;
@@ -39,9 +42,15 @@ const MeetingPage = () => {
       <StreamCall call={call}>
         <StreamTheme>
           {!isSetupComplete ? (
+            <>
+            <h1>meetin setup being rendered</h1>
             <MeetingSetup setIsSetupComplete={setIsSetupComplete} />
+            </>
           ) : (
-            <MeetingRoom />
+            <>
+            <h1>meetin room beign rendered</h1>
+            {/* <MeetingRoom /> */}
+            </>
           )}
         </StreamTheme>
       </StreamCall>

@@ -15,6 +15,8 @@ export const useGetCallById = (id: string | string[]) => {
         // https://getstream.io/video/docs/react/guides/querying-calls/#filters
         const { calls } = await client.queryCalls({ filter_conditions: { id } });
 
+
+        // if not empty...
         if (calls.length > 0) setCall(calls[0]);
 
         setIsCallLoading(false);
