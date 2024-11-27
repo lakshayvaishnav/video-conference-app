@@ -26,6 +26,7 @@ const Sidebar = () => {
                 }
               )}
             >
+              
               <Image
                 src={item.imgURL}
                 alt={item.label}
